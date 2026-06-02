@@ -1,0 +1,24 @@
+@media (min-width: 992px) {
+  .cv-page {
+    padding: 0 100px;
+  }
+
+  .cer-left {
+    position: relative;
+  }
+
+  .cer-left::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 80%;
+    background-color: orange;
+  }
+
+  footer i,
+  footer a {
+    font-size: 150%;
+  }
+}

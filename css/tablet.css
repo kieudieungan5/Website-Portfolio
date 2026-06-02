@@ -1,0 +1,35 @@
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .cv-page {
+    padding: 0 50px;
+  }
+
+  .name-02,
+  .position-02,
+  .avatar {
+    display: none;
+  }
+
+  .navigation {
+    width: 80%;
+    grid-template-columns: 1fr 1fr 0.25fr 1fr 1fr;
+  }
+
+  .cer-left {
+    position: relative;
+  }
+
+  .cer-left::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 80%;
+    background-color: orange;
+  }
+
+  footer i,
+  footer a {
+    font-size: 150%;
+  }
+}

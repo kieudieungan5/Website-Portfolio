@@ -1,0 +1,35 @@
+@media (max-width: 767.98px) {
+  .cv-page {
+    padding: 0 10px;
+  }
+
+  .name-01 {
+    font-size: 30px;
+  }
+
+  .position-01 {
+    font-size: 15px;
+  }
+  .name-02,
+  .position-02,
+  .avatar {
+    display: none;
+  }
+
+  .navigation {
+    width: 80%;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  .nav {
+    border: none;
+  }
+
+  footer i,
+  footer a {
+    font-size: 150%;
+  }
+}
