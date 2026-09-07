@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   box-sizing: border-box;
 }
 
@@ -9,71 +9,64 @@
   /* padding: 0 100px; */
   font-family: sans-serif;
 }
+/* 
+  .time {
+    font-size: 14px;
+  }
 
-/* .section-title {
-  font-size: 20px;
-  color: rgb(74, 74, 74);
+  .hobby-content p {
+    font-size: 12px;
+  }
 
-  height: 30px;
+  .hobby-content i {
+    width: 40px;
+    height: 40px;
+  }
+
+  .experience-content ul,
+  .activity-content ul {
+    list-style-type: none;
+  }
+
+  .experience-content li::before,
+  .activity-content li::before {
+    content: "-";
+  } */
+
+/* span {
+  /* display: block; */
+/* width: 45px;
+  height: 2px; */
+/* background-color: #199cdb;
 } */
 
-.time {
-  font-size: 14px;
-}
-
-.hobby-content p {
-  font-size: 12px;
-}
-
-.hobby-content i {
-  width: 40px;
-  height: 40px;
-}
-
-.experience-content ul,
-.activity-content ul {
-  list-style-type: none;
-}
-
-.experience-content li::before,
-.activity-content li::before {
-  content: "-";
-}
-
-span {
-  /* display: block; */
-  width: 45px;
-  height: 2px;
-  /* background-color: #199cdb; */
-}
-
-.cer-img {
+/* .cer-img {
   width: 160px;
   height: 200px;
-}
+} */
 
-.project-time {
+/* .project-time {
   width: 100px;
   height: 50px;
-}
+} */
 
-#experience,
+/* #experience,
 #education,
 #activity,
 #hobby,
 #language,
 #skill {
   transition: all 0.3s ease;
-}
+} */
 
-#experience:hover,
+/* #experience:hover,
 #education:hover,
 #activity:hover,
 #hobby:hover,
 #language:hover,
 #skill:hover {
   box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
-}
+} */
 
 /* sử dụng position để chỉnh vị trí text lên ảnh giữa ảnh  */
 .banner {
@@ -100,7 +93,7 @@ span {
 }
 
 /* dùng grid sắp xếp thanh điều hướng */
-.navigation {
+/* .navigation {
   width: 100%;
   height: 60px;
   margin-left: auto;
@@ -112,9 +105,9 @@ span {
   align-items: stretch;
 
   position: relative;
-}
+} */
 
-.nav {
+/* .nav {
   border-left: 1px solid rgb(209, 209, 209);
   display: flex;
   justify-content: center;
@@ -136,13 +129,13 @@ span {
 
 .name-position-02 {
   flex-direction: column;
-}
+} */
 
 /* .icon {
   color: orange;
 } */
 
-.name-02 {
+/* .name-02 {
   font-size: 20px;
 }
 
@@ -150,25 +143,10 @@ span {
   font-size: 15px;
 }
 
-/* chỉnh ảnh avatar ra giữa thanh điều hướng*/
-.avatar {
-  display: block;
-  width: 150px;
-  height: 150px;
-
-  border: 5px solid white;
-  border-radius: 50%;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .form-control:focus {
   border-color: orange;
   box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.25);
-}
+} */
 
 /* dùng grid và flex box để xây dựng phần thông tin cá nhân  */
 /* .target-info {
