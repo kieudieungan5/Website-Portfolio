@@ -149,6 +149,7 @@
               </div>
             </div>
           </div>
+
           <!-- System monitor traffic & detect anomaly -->
           <div class="col-lg-4 col-md-6 col-sm-12 text-light p-3">
             <div class="card" title="Project: Traffic Data Processing Pipeline & Visualization">
@@ -201,9 +202,77 @@
             </div>
           </div>
 
-          <!--  -->
-          <div class="col-lg-4 col-md-6 col-sm-12 text-light p-3"></div>
+          <!-- PROJECT 3: Concurrent-Banking-Transactions-Processing -->
+          <div class="col-lg-4 col-md-6 col-sm-12 text-light p-3">
+            <div class="card" title="Project: Concurrent Banking Transactions Processing 
+            implements 4 versisons: multithreading/ synchronized/ ordered locking 
+            / JDBC API, MySQL, MySQL InnoDB row-level locking">
+              <img
+                src="images/Img_ConcurrentBankingTransactionsProcessing.png"
+                alt="Image"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Concurrent Banking Transactions Processing</h5>
+                <p class="card-text">
+                  To ensure transactions processed concurrently but update balances correct & prevent deadlock, I tried 
+                  with 4 versions: 
+                </p>
+                <p>
+                  V1/ ExecutorService & pool to implement multithread; Future to store result of task, needed to detect error tasks
+                </p>
+                <p>
+                  V2/ synchronized & account instance's lock to lock code block of updating balance 
+                </p>
+                <p>
+                  V3/ AtomicLong.incrementAndGet() to create lock id for account instances, thread acquires locks in ascending order
+                </p>
+                <p>
+                  V4/ Connection, PreparedStatement to connect Java application & MySQL; setAutoCommit(false), commit() & rollback() 
+                  support atomic transactions; InnoDB, "UPDATE...WHERE...AND..." locked row of transaction. But still need checking 
+                  case of transactions update rows in different orders & cause deadlock.
+                </p>
+                <div class="mb-3">
+                  <span class="badge text-bg-dark">Java</span>
+                  <span class="badge text-bg-dark">JDBC API</span>
+                  <span class="badge text-bg-dark">MySQL</span>
+                  <span class="badge text-bg-dark">SQL</span>
+                  <span class="badge text-bg-dark">multithread</span>
+                  <span class="badge text-bg-dark">deadlock</span>
+                  <span class="badge text-bg-dark">thread safe</span>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <a
+                      href="https://github.com/kieudieungan5/Concurrent-Banking-Transactions-Processing-/tree/main"
+                      target="_blank"
+                      class="btn btn-success d-flex justify-content-center align-items-center"
+                      title="View Code"
+                    >
+                      <i class="fa-brands fa-github me-2"></i>
+                      Code
+                    </a>
+                  </div>
+                  <div class="col-6">
+                    <a
+                      href="https://github.com/kieudieungan5/Concurrent-Banking-Transactions-Processing-/tree/main/test-results"
+                      target="_blank"
+                      class="btn btn-success d-flex justify-content-center align-items-center"
+                      title="View Output"
+                    >
+                      <i
+                        class="fa-solid fa-arrow-up-right-from-square me-2"
+                      ></i>
+                      Test Results
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+
       </section>
 
       <!-- Footer -->
